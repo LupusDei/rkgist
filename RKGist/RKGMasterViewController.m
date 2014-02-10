@@ -9,6 +9,7 @@
 #import "RKGMasterViewController.h"
 
 #import "RKGDetailViewController.h"
+#import "RKGGist.h"
 
 @interface RKGMasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -24,11 +25,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
+    
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    UIRefreshControl *refreshControl = [UIRefreshControl new];
+    [refreshControl addTarget:self action:@selector(loadGists) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+    
+    [self loadGists];
+    [self.refreshControl beginRefreshing];
+}
+
+- (void)loadGists
+{
+    [[RKObjectManager sharedManager] getObjectsAtPath:@"/gists/public" parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        [self.refreshControl endRefreshing];
+    } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+        [self.refreshControl endRefreshing];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"An Error Has Occurred" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -124,14 +143,14 @@
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Gist" inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createdAt" ascending:NO];
     NSArray *sortDescriptors = @[sortDescriptor];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
@@ -215,8 +234,9 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+    RKGGist *gist = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = gist.titleText;
+    cell.detailTextLabel.text = gist.subtitleText;
 }
 
 @end

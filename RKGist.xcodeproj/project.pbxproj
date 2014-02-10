@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12D8F4FAAA1B4B4EA0101BAB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A30B1DE1B8F74C14A7AC6714 /* libPods.a */; };
+		6226D9A918A1E74700848B36 /* RKGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6226D9A818A1E74700848B36 /* RKGUser.m */; };
+		6226D9AC18A1E74700848B36 /* RKGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6226D9AB18A1E74700848B36 /* RKGFile.m */; };
+		6226D9AF18A1E74700848B36 /* RKGGist.m in Sources */ = {isa = PBXBuildFile; fileRef = 6226D9AE18A1E74700848B36 /* RKGGist.m */; };
 		62907D6F18A1C77200808EC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62907D6E18A1C77200808EC4 /* Foundation.framework */; };
 		62907D7118A1C77200808EC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62907D7018A1C77200808EC4 /* CoreGraphics.framework */; };
 		62907D7318A1C77200808EC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62907D7218A1C77200808EC4 /* UIKit.framework */; };
@@ -15,7 +19,6 @@
 		62907D7D18A1C77200808EC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62907D7C18A1C77200808EC4 /* main.m */; };
 		62907D8118A1C77200808EC4 /* RKGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62907D8018A1C77200808EC4 /* RKGAppDelegate.m */; };
 		62907D8418A1C77200808EC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62907D8218A1C77200808EC4 /* Main.storyboard */; };
-		62907D8718A1C77200808EC4 /* RKGist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62907D8518A1C77200808EC4 /* RKGist.xcdatamodeld */; };
 		62907D8A18A1C77200808EC4 /* RKGMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62907D8918A1C77200808EC4 /* RKGMasterViewController.m */; };
 		62907D8D18A1C77200808EC4 /* RKGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62907D8C18A1C77200808EC4 /* RKGDetailViewController.m */; };
 		62907D8F18A1C77200808EC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62907D8E18A1C77200808EC4 /* Images.xcassets */; };
@@ -25,6 +28,7 @@
 		62907D9918A1C77200808EC4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62907D7418A1C77200808EC4 /* CoreData.framework */; };
 		62907DA118A1C77200808EC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62907D9F18A1C77200808EC4 /* InfoPlist.strings */; };
 		62907DA318A1C77200808EC4 /* RKGistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62907DA218A1C77200808EC4 /* RKGistTests.m */; };
+		62907DAE18A1CD2C00808EC4 /* RKGist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62907DAC18A1CD2C00808EC4 /* RKGist.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6226D9A718A1E74700848B36 /* RKGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGUser.h; sourceTree = "<group>"; };
+		6226D9A818A1E74700848B36 /* RKGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGUser.m; sourceTree = "<group>"; };
+		6226D9AA18A1E74700848B36 /* RKGFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGFile.h; sourceTree = "<group>"; };
+		6226D9AB18A1E74700848B36 /* RKGFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGFile.m; sourceTree = "<group>"; };
+		6226D9AD18A1E74700848B36 /* RKGGist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGGist.h; sourceTree = "<group>"; };
+		6226D9AE18A1E74700848B36 /* RKGGist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGGist.m; sourceTree = "<group>"; };
 		62907D6B18A1C77200808EC4 /* RKGist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKGist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62907D6E18A1C77200808EC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		62907D7018A1C77200808EC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,7 +60,6 @@
 		62907D7F18A1C77200808EC4 /* RKGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKGAppDelegate.h; sourceTree = "<group>"; };
 		62907D8018A1C77200808EC4 /* RKGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKGAppDelegate.m; sourceTree = "<group>"; };
 		62907D8318A1C77200808EC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		62907D8618A1C77200808EC4 /* RKGist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RKGist.xcdatamodel; sourceTree = "<group>"; };
 		62907D8818A1C77200808EC4 /* RKGMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKGMasterViewController.h; sourceTree = "<group>"; };
 		62907D8918A1C77200808EC4 /* RKGMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKGMasterViewController.m; sourceTree = "<group>"; };
 		62907D8B18A1C77200808EC4 /* RKGDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKGDetailViewController.h; sourceTree = "<group>"; };
@@ -61,6 +70,9 @@
 		62907D9E18A1C77200808EC4 /* RKGistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKGistTests-Info.plist"; sourceTree = "<group>"; };
 		62907DA018A1C77200808EC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		62907DA218A1C77200808EC4 /* RKGistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKGistTests.m; sourceTree = "<group>"; };
+		62907DAD18A1CD2C00808EC4 /* RKGist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RKGist.xcdatamodel; sourceTree = "<group>"; };
+		A30B1DE1B8F74C14A7AC6714 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F2A0B123264C2AB90912E6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,7 @@
 				62907D7518A1C77200808EC4 /* CoreData.framework in Frameworks */,
 				62907D7318A1C77200808EC4 /* UIKit.framework in Frameworks */,
 				62907D6F18A1C77200808EC4 /* Foundation.framework in Frameworks */,
+				12D8F4FAAA1B4B4EA0101BAB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +102,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6226D98B18A1E5A200848B36 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6226D9AD18A1E74700848B36 /* RKGGist.h */,
+				6226D9AE18A1E74700848B36 /* RKGGist.m */,
+				6226D9AA18A1E74700848B36 /* RKGFile.h */,
+				6226D9AB18A1E74700848B36 /* RKGFile.m */,
+				6226D9A718A1E74700848B36 /* RKGUser.h */,
+				6226D9A818A1E74700848B36 /* RKGUser.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		62907D6218A1C77200808EC4 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +122,7 @@
 				62907D9C18A1C77200808EC4 /* RKGistTests */,
 				62907D6D18A1C77200808EC4 /* Frameworks */,
 				62907D6C18A1C77200808EC4 /* Products */,
+				B8F2A0B123264C2AB90912E6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +143,7 @@
 				62907D7218A1C77200808EC4 /* UIKit.framework */,
 				62907D7418A1C77200808EC4 /* CoreData.framework */,
 				62907D9518A1C77200808EC4 /* XCTest.framework */,
+				A30B1DE1B8F74C14A7AC6714 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,9 +157,10 @@
 				62907D8818A1C77200808EC4 /* RKGMasterViewController.h */,
 				62907D8918A1C77200808EC4 /* RKGMasterViewController.m */,
 				62907D8B18A1C77200808EC4 /* RKGDetailViewController.h */,
+				62907DAC18A1CD2C00808EC4 /* RKGist.xcdatamodeld */,
+				6226D98B18A1E5A200848B36 /* Models */,
 				62907D8C18A1C77200808EC4 /* RKGDetailViewController.m */,
 				62907D8E18A1C77200808EC4 /* Images.xcassets */,
-				62907D8518A1C77200808EC4 /* RKGist.xcdatamodeld */,
 				62907D7718A1C77200808EC4 /* Supporting Files */,
 			);
 			path = RKGist;
@@ -173,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62907DA618A1C77200808EC4 /* Build configuration list for PBXNativeTarget "RKGist" */;
 			buildPhases = (
+				ADA6E01046834FC1ACAF3DE9 /* Check Pods Manifest.lock */,
 				62907D6718A1C77200808EC4 /* Sources */,
 				62907D6818A1C77200808EC4 /* Frameworks */,
 				62907D6918A1C77200808EC4 /* Resources */,
+				232DDC47675C4D07B764AE4A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,16 +290,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		232DDC47675C4D07B764AE4A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADA6E01046834FC1ACAF3DE9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		62907D6718A1C77200808EC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6226D9AC18A1E74700848B36 /* RKGFile.m in Sources */,
+				6226D9AF18A1E74700848B36 /* RKGGist.m in Sources */,
+				62907DAE18A1CD2C00808EC4 /* RKGist.xcdatamodeld in Sources */,
 				62907D7D18A1C77200808EC4 /* main.m in Sources */,
 				62907D8D18A1C77200808EC4 /* RKGDetailViewController.m in Sources */,
-				62907D8718A1C77200808EC4 /* RKGist.xcdatamodeld in Sources */,
 				62907D8118A1C77200808EC4 /* RKGAppDelegate.m in Sources */,
 				62907D8A18A1C77200808EC4 /* RKGMasterViewController.m in Sources */,
+				6226D9A918A1E74700848B36 /* RKGUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +459,7 @@
 		};
 		62907DA718A1C77200808EC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F2A0B123264C2AB90912E6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -405,6 +473,7 @@
 		};
 		62907DA818A1C77200808EC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F2A0B123264C2AB90912E6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -477,6 +546,7 @@
 				62907DA818A1C77200808EC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62907DA918A1C77200808EC4 /* Build configuration list for PBXNativeTarget "RKGistTests" */ = {
 			isa = XCConfigurationList;
@@ -485,16 +555,17 @@
 				62907DAB18A1C77200808EC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		62907D8518A1C77200808EC4 /* RKGist.xcdatamodeld */ = {
+		62907DAC18A1CD2C00808EC4 /* RKGist.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				62907D8618A1C77200808EC4 /* RKGist.xcdatamodel */,
+				62907DAD18A1CD2C00808EC4 /* RKGist.xcdatamodel */,
 			);
-			currentVersion = 62907D8618A1C77200808EC4 /* RKGist.xcdatamodel */;
+			currentVersion = 62907DAD18A1CD2C00808EC4 /* RKGist.xcdatamodel */;
 			path = RKGist.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
